@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="application/javascript">
+        // Задание 1
+        let myArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко']
+        for(let i = 0; i < myArray.length; i++) {
+            if (myArray[i] === 'молоко') {
+                console.log('хорошо');
+            }
+            else if (myArray[i] === 'пиво') {
+                console.log('плохо');
+            }
+        }
+    </script>
+
+    <script type="application/javascript">
+        // Задание 2
+        myArray1 = [1, 5, 12, 4, 3]
+        let total = 0
+        for(let i = 0; i < myArray1.length; i++) {
+            total += myArray1[i];
+        }
+        let avg = total / myArray1.length 
+        console.log(avg)
+
+        myArray2 = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let total2 = 0
+        for(let i = 0; i < myArray2.length; i++) {
+            total2 += myArray2[i];
+        }
+        let avg2 = total2 / myArray2.length 
+        console.log(avg2)
+
+        myArray3 = [3, 10, 17]
+        let total3 = 0
+        for(let i = 0; i < myArray3.length; i++) {
+            total3 += myArray3[i];
+        }
+        let avg3 = total3 / myArray3.length 
+        console.log(avg3)
+    </script>
+
+    <script type="application/javascript">
+        //Задание 3
+        let a = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?');
+        if (a === '5') {
+            console.log('Ответ верный')
+        }
+        else if (a === 'пять') {
+            console.log('Ответ верный')
+        }
+        else {
+            console.log('Ответ неверный')
+        }
+    </script>
+
+    <script type="application/javascript">
+        //Задание 4
+        let Duck = {
+            name: 'Дональд',
+            color: 'белый',
+            old: 1
+        };
+
+        function toStr(Duck) {
+            console.log(Duck.name + ', ' + Duck.color + ', ' + Duck.old + ' год')
+        }
+
+        function say(Duck){
+            console.log('Кря-кря')
+        }
+
+        toStr(Duck)
+        say(Duck)
+    </script>
+
+</body>
+</html>
